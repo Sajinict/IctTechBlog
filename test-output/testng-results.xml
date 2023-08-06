@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-05T10:35:26 IST" name="Default suite" finished-at="2023-08-05T10:36:07 IST" duration-ms="40655">
+  <suite started-at="2023-08-06T13:53:53 IST" name="Default suite" finished-at="2023-08-06T13:54:08 IST" duration-ms="14971">
     <groups>
     </groups>
-    <test started-at="2023-08-05T10:35:26 IST" name="Default test" finished-at="2023-08-05T10:36:07 IST" duration-ms="40655">
-      <class name="org.ictkerala.testcases.AdminApproval">
-        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.AdminApproval@6f1de4c7]" started-at="2023-08-05T10:35:26 IST" name="intilization" finished-at="2023-08-05T10:35:34 IST" duration-ms="8221" status="PASS">
+    <test started-at="2023-08-06T13:53:53 IST" name="Default test" finished-at="2023-08-06T13:54:08 IST" duration-ms="14971">
+      <class name="org.ictkerala.testcases.AdminBaseTest">
+        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.AdminBaseTest@2a4fb17b]" started-at="2023-08-06T13:53:53 IST" name="intilization" finished-at="2023-08-06T13:54:05 IST" duration-ms="12307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilization -->
-        <test-method signature="ValidApproval()[pri:1, instance:org.ictkerala.testcases.AdminApproval@6f1de4c7]" started-at="2023-08-05T10:35:34 IST" name="ValidApproval" finished-at="2023-08-05T10:35:39 IST" duration-ms="4387" status="FAIL">
+        <test-method signature="adminBasic()[pri:0, instance:org.ictkerala.testcases.AdminBaseTest@2a4fb17b]" started-at="2023-08-06T13:54:05 IST" name="adminBasic" finished-at="2023-08-06T13:54:08 IST" duration-ms="2612" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Post approved] but found [Approve]]]>
+              <![CDATA[expected [http://64.227.132.106/admin] but found [http://64.227.132.106/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Post approved] but found [Approve]
+              <![CDATA[java.lang.AssertionError: expected [http://64.227.132.106/admin] but found [http://64.227.132.106/login]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at org.ictkerala.testcases.AdminApproval.ValidApproval(AdminApproval.java:40)
+at org.ictkerala.testcases.AdminBaseTest.adminBasic(AdminBaseTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -56,88 +56,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidApproval -->
-        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.AdminApproval@6f1de4c7]" started-at="2023-08-05T10:35:39 IST" name="intilization" finished-at="2023-08-05T10:35:45 IST" duration-ms="6164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intilization -->
-        <test-method signature="ValidReject()[pri:2, instance:org.ictkerala.testcases.AdminApproval@6f1de4c7]" started-at="2023-08-05T10:35:45 IST" name="ValidReject" finished-at="2023-08-05T10:35:50 IST" duration-ms="5302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidReject -->
-        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.AdminApproval@6f1de4c7]" started-at="2023-08-05T10:35:50 IST" name="intilization" finished-at="2023-08-05T10:36:00 IST" duration-ms="9631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intilization -->
-        <test-method signature="ValidRejectComment()[pri:3, instance:org.ictkerala.testcases.AdminApproval@6f1de4c7]" started-at="2023-08-05T10:36:00 IST" name="ValidRejectComment" finished-at="2023-08-05T10:36:07 IST" duration-ms="6864" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=115.0.5790.170)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [279c0e159e8b991e22c3748e2651f1fe, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\sahal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64010/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 279c0e159e8b991e22c3748e2651f1fe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=115.0.5790.170)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [279c0e159e8b991e22c3748e2651f1fe, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\sahal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64010/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 279c0e159e8b991e22c3748e2651f1fe
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1084)
-at org.ictkerala.page.AdminAdRe.RjctCmnt(AdminAdRe.java:152)
-at org.ictkerala.testcases.AdminApproval.ValidRejectComment(AdminApproval.java:96)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidRejectComment -->
-      </class> <!-- org.ictkerala.testcases.AdminApproval -->
+        </test-method> <!-- adminBasic -->
+      </class> <!-- org.ictkerala.testcases.AdminBaseTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
