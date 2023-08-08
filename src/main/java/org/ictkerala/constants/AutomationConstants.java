@@ -33,4 +33,7 @@ public static String ExpectedTextAprve="Post approved";
 
 public static String ExpectedTextRejct ="post rejected";
 public static String ExpectedTextRcmt="message send to user";
+
+public static String ExpectedTextUserCata ="New TestBLOG Trainer";
+public static String ExpectedTextGECata ="AKHL";
 }
