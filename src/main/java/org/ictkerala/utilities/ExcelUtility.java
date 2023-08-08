@@ -12,7 +12,7 @@ public class ExcelUtility{
 	
 	public static String getData(int rowNum,int colNum) throws IOException {
 	
-	FileInputStream inp=new FileInputStream("C:\\Users\\sahal\\Desktop\\Proect Aug Maven\\IctTechBlog\\src\\main\\resources\\TestData.xlsx");
+	FileInputStream inp=new FileInputStream("C:\\Users\\ksakh\\git\\IctTechBlog\\src\\main\\resources\\TestData.xlsx");
 		excelWbook=new XSSFWorkbook(inp);
 		excelSheet=excelWbook.getSheetAt(0);
 		

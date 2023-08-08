@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
 
-	 public WebDriver driver;
+	public WebDriver driver;
     public static Properties properties;
     public void init() {
     	driver=new ChromeDriver();

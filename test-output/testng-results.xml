@@ -1,63 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-06T13:53:53 IST" name="Default suite" finished-at="2023-08-06T13:54:08 IST" duration-ms="14971">
+  <suite started-at="2023-08-08T21:56:22 IST" name="Default suite" finished-at="2023-08-08T21:56:44 IST" duration-ms="22653">
     <groups>
     </groups>
-    <test started-at="2023-08-06T13:53:53 IST" name="Default test" finished-at="2023-08-06T13:54:08 IST" duration-ms="14971">
-      <class name="org.ictkerala.testcases.AdminBaseTest">
-        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.AdminBaseTest@2a4fb17b]" started-at="2023-08-06T13:53:53 IST" name="intilization" finished-at="2023-08-06T13:54:05 IST" duration-ms="12307" status="PASS">
+    <test started-at="2023-08-08T21:56:22 IST" name="Default test" finished-at="2023-08-08T21:56:44 IST" duration-ms="22653">
+      <class name="org.ictkerala.testcases.HomeCheckTC">
+        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.HomeCheckTC@5656be13]" started-at="2023-08-08T21:56:22 IST" name="intilization" finished-at="2023-08-08T21:56:32 IST" duration-ms="10209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilization -->
-        <test-method signature="adminBasic()[pri:0, instance:org.ictkerala.testcases.AdminBaseTest@2a4fb17b]" started-at="2023-08-06T13:54:05 IST" name="adminBasic" finished-at="2023-08-06T13:54:08 IST" duration-ms="2612" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [http://64.227.132.106/admin] but found [http://64.227.132.106/login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://64.227.132.106/admin] but found [http://64.227.132.106/login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at org.ictkerala.testcases.AdminBaseTest.adminBasic(AdminBaseTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="CheckGECataPosted()[pri:0, instance:org.ictkerala.testcases.HomeCheckTC@5656be13]" started-at="2023-08-08T21:56:32 IST" name="CheckGECataPosted" finished-at="2023-08-08T21:56:34 IST" duration-ms="2320" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminBasic -->
-      </class> <!-- org.ictkerala.testcases.AdminBaseTest -->
+        </test-method> <!-- CheckGECataPosted -->
+        <test-method is-config="true" signature="intilization()[pri:0, instance:org.ictkerala.testcases.HomeCheckTC@5656be13]" started-at="2023-08-08T21:56:34 IST" name="intilization" finished-at="2023-08-08T21:56:42 IST" duration-ms="7814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intilization -->
+        <test-method signature="CheckUserCataPosted()[pri:0, instance:org.ictkerala.testcases.HomeCheckTC@5656be13]" started-at="2023-08-08T21:56:42 IST" name="CheckUserCataPosted" finished-at="2023-08-08T21:56:44 IST" duration-ms="2204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckUserCataPosted -->
+      </class> <!-- org.ictkerala.testcases.HomeCheckTC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
